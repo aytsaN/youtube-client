@@ -3,10 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import AppRoutingModule from './app-routing.module';
 import AppComponent from './app.component';
-import HeaderComponent from './header/header.component';
-import SearchComponent from './search/search.component';
-import SearchResultsComponent from './search/search-results/search-results.component';
-import SearchItemComponent from './search/search-item/search-item.component';
+import HeaderComponent from './components/header/header.component';
+import SearchComponent from './components/search/search.component';
+import SearchResultsComponent from './components/search/search-results/search-results.component';
+import SearchItemComponent from './components/search/search-item/search-item.component';
 
 @NgModule({
   declarations: [
