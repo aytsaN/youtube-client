@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./constants";
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none
+}
+
+.wrapper {
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.header,
+.filter {
+  background-color: $color-bg-secondary;
+}
+
+.btn {
+  @include brand-shadow-box;
+  width: 120px;
+  height: 35px;
+
+  &:hover {
+    background-color: $color-brand-hover;
+    filter: none;
+  }
+}
+
+.font-color-brand {
+  color: $color-brand;
+}
