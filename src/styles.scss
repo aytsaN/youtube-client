@@ -16,7 +16,8 @@ html {
 }
 
 a {
-  text-decoration: none
+  text-decoration: none;
+  color: inherit;
 }
 
 .wrapper {
@@ -24,6 +25,10 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 30px;
+}
+
+.hidden {
+  display: none;
 }
 
 .header,
@@ -35,11 +40,6 @@ a {
   @include brand-shadow-box;
   width: 120px;
   height: 35px;
-
-  &:hover {
-    background-color: $color-brand-hover;
-    filter: none;
-  }
 }
 
 .font-color-brand {

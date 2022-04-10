@@ -8,9 +8,9 @@ describe('AppWrapperComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AppWrapperComponent ]
+      declarations: [AppWrapperComponent],
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

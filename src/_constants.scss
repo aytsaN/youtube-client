@@ -24,4 +24,13 @@ $transition-hover: .2s;
   background-color: $color-brand;
   filter: drop-shadow(2px 0px 4px $color-brand);
   transition: $transition-hover;
+
+  &:hover {
+    background-color: $color-brand-hover;
+    filter: none;
+  }
+
+  &:active {
+    opacity: .8;
+  }
 }

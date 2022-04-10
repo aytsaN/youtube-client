@@ -15,6 +15,15 @@
 
   &__logo {
     margin-right: 10px;
+    transition: $transition-hover;
+
+    &:hover {
+      opacity: .7;
+    }
+
+    &:active {
+      opacity: .6;
+    }
   }
 
   &__user {
@@ -40,6 +49,11 @@
       width: 2.4rem;
       height: 2.4rem;
       font-size: 1.7em;
+    }
+
+    &:hover &-icon {
+      background-color: $color-brand-hover;
+      filter: none;
     }
   }
 }
