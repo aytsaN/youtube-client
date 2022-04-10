@@ -7,8 +7,8 @@
         </a>
         <div class="search">
           <input type="text" class="search__input" placeholder="What are you want to find out?">
-          <button class="search__submit btn">search</button>
-          <button class="search__settings btn">
+          <button class="search__submit btn" (click)="onSearch()">search</button>
+          <button class="search__settings btn" (click)="toggleFilterComponent()">
             <span class="material-icons">tune</span>
           </button>
         </div>

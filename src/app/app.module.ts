@@ -7,8 +7,8 @@ import HeaderComponent from './components/header/header.component';
 import SearchComponent from './components/search/search.component';
 import SearchResultsComponent from './components/search/search-results/search-results.component';
 import SearchItemComponent from './components/search/search-item/search-item.component';
-import { FilterComponent } from './components/filter/filter.component';
-import { AppWrapperComponent } from './components/app-wrapper/app-wrapper.component';
+import FilterComponent from './components/filter/filter.component';
+import AppWrapperComponent from './components/app-wrapper/app-wrapper.component';
 
 @NgModule({
   declarations: [

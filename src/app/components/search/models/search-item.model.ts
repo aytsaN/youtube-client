@@ -4,7 +4,7 @@ interface ISearchItemThumbnail {
   height: number,
 }
 
-interface ISearchItemStatistics {
+export interface ISearchItemStatistics {
   viewCount: string,
   likeCount: string,
   dislikeCount: string,

@@ -55,6 +55,10 @@
       background-color: $color-brand-hover;
       filter: none;
     }
+
+    &:active &-icon {
+      opacity: .8;
+    }
   }
 }
 

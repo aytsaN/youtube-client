@@ -1,2 +1,6 @@
-<app-header></app-header>
-<app-filter></app-filter>
+<app-header
+  (filterToggled)="toggleFilter()"
+  (requestSubmitted)="showResults()"
+></app-header>
+<app-filter [hidden]="!isFilterVisible"></app-filter>
+<app-search #responseData></app-search>
