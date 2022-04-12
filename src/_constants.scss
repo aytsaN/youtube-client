@@ -1,0 +1,47 @@
+$color-bg-secondary: #e5e5e5;
+$color-brand: #2f80ed;
+$color-brand-hover: #5ea2ff;
+$color-brand-disabled: #b1b1b1;
+$color-font-light: #fff;
+$color-font-dark: #4f4f4f;
+
+
+$border-radius: 5px;
+
+$transition-hover: .2s;
+
+@mixin wrapper-inner($position: static) {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: $position;
+}
+
+@mixin brand-shadow-box {
+  font-size: 1.2rem;
+  color: $color-font-light;
+  border-radius: $border-radius;
+  background-color: $color-brand;
+  filter: drop-shadow(2px 0px 4px $color-brand);
+  transition: $transition-hover;
+
+  &:hover {
+    background-color: $color-brand-hover;
+    filter: none;
+  }
+
+  &:active {
+    opacity: .8;
+  }
+}
+
+@mixin card($shadow-color: rgba(0, 0, 0, 0.25)) {
+  display: flex;
+  background-color: $color-bg-secondary;
+  border-radius: $border-radius;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  filter: drop-shadow(2px 2px 4px $shadow-color);
+}

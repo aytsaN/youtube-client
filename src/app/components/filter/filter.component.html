@@ -1,0 +1,16 @@
+<section class="filter">
+  <div class="wrapper">
+    <div class="filter-inner">
+      <div class="filter__options">
+        <span>Sorting by:</span>
+        <ul class="font-color-brand">
+          <li id="filterByDate" class="filter__option filter__option_underline" (click)="filterResults($event)">date</li>
+          <li id="filterByViewsCount" class="filter__option filter__option_underline" (click)="filterResults($event)">count of views</li>
+          <li id="filterByKeyword" class="filter__option">by word or sentance
+            <input type="text" (input)="filterResults($event)">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

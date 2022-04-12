@@ -4,7 +4,7 @@ interface ISearchItemThumbnail {
   height: number,
 }
 
-interface ISearchItemStatistics {
+export interface ISearchItemStatistics {
   viewCount: string,
   likeCount: string,
   dislikeCount: string,
@@ -28,12 +28,12 @@ interface ISearchItemSnippet {
   tags: string[],
   categoryId: string,
   liveBroadcastContent: string,
+  defaultLanguage?: string,
   localized: {
     title: string,
     description: string,
   },
   defaultAudioLanguage: string,
-  statistics: ISearchItemStatistics,
 }
 
 export interface ISearchItem {
@@ -41,4 +41,5 @@ export interface ISearchItem {
   etag: string,
   id: string,
   snippet: ISearchItemSnippet,
+  statistics: ISearchItemStatistics,
 }

@@ -1,0 +1,6 @@
+<app-header
+  (filterToggled)="toggleFilter()"
+  (requestSubmitted)="showResults()"
+></app-header>
+<app-filter [hidden]="!isFilterVisible" (filterApplied)="applyFilter($event)"></app-filter>
+<app-search #responseData></app-search>

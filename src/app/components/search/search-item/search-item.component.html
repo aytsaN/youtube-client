@@ -1,1 +1,30 @@
-<p>search-item works!</p>
+<div class="item"
+  [ngClass]="{
+    'item-blue': publicationDateColorScheme['blue'],
+    'item-green': publicationDateColorScheme['green'],
+    'item-red': publicationDateColorScheme['red']
+  }">
+  <div class="item__thumbnail">
+    <img src="{{ imgSrc }}" alt="{{ title }}" class="item__thumbnail">
+  </div>
+  <div class="item__statistics">
+    <div class="item__statistics-views" title="Views">
+      <span class="material-icons">visibility</span>
+      <span class="item__statistics-count">{{ statistics.viewCount }}</span>
+    </div>
+    <div class="item__statistics-likes" title="Likes">
+      <span class="material-icons item__statistics-icon">favorite</span>
+      <span class="item__statistics-count">{{ statistics.likeCount }}</span>
+    </div>
+    <div class="item__statistics-dislikes" title="Dislikes">
+      <span class="material-icons item__statistics-icon">heart_broken</span>
+      <span class="item__statistics-count">{{ statistics.dislikeCount }}</span>
+    </div>
+    <div class="item__statistics-comments" title="Comments">
+      <span class="material-icons item__statistics-icon">forum</span>
+      <span class="item__statistics-count">{{ statistics.commentCount }}</span>
+    </div>
+  </div>
+  <p class="item__title" title="{{ title }}">{{ title }}</p>
+  <button class="item__button btn">more...</button>
+</div>

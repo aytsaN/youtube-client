@@ -1,0 +1,33 @@
+@import "./../../../constants";
+
+.filter {
+  height: 50px;
+  font-size: 1.2rem;
+
+  &-inner {
+    @include wrapper-inner;
+  }
+
+  &__options {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    margin: 0 10px;
+    list-style: none;
+  }
+
+  &__option {
+
+    &_underline {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}

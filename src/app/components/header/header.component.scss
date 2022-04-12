@@ -1,0 +1,90 @@
+@import "./../../../constants";
+
+.header {
+  height: 80px;
+
+  &-inner {
+    @include wrapper-inner(relative);
+  }
+
+  &__main-column {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 10px;
+    transition: $transition-hover;
+
+    &:hover {
+      opacity: .7;
+    }
+
+    &:active {
+      opacity: .6;
+    }
+  }
+
+  &__user {
+    position: absolute;
+    right: 0;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+    }
+
+    &-name {
+      padding-right: 5px;
+    }
+
+    &-icon {
+      @include brand-shadow-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 2.4rem;
+      height: 2.4rem;
+      font-size: 1.7em;
+    }
+
+    &:hover &-icon {
+      background-color: $color-brand-hover;
+      filter: none;
+    }
+
+    &:active &-icon {
+      opacity: .8;
+    }
+  }
+}
+
+.search {
+  width: 100%;
+  display: flex;
+
+  * {
+    height: 25px;
+  }
+
+  &__input {
+    width: 70%;
+    background-color: #efefef;
+  }
+
+  &__submit {
+    width: 80px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  &__settings {
+    width: 25px;
+    margin-left: 10px;
+  }
+
+}
