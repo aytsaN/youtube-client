@@ -9,12 +9,12 @@ export default class HeaderComponent {
   @Output()
   private filterToggled = new EventEmitter();
 
+  @Output()
+  private requestSubmitted = new EventEmitter();
+
   toggleFilterComponent(): void {
     this.filterToggled.emit();
   }
-
-  @Output()
-  private requestSubmitted = new EventEmitter();
 
   onSearch(): void {
     this.requestSubmitted.emit();

@@ -1,4 +1,4 @@
-import { ISearchResponse } from '../components/search/models/search-response.model';
+import { ISearchResponse } from '../models/search-response.model';
 
 const RESPONSE: ISearchResponse = {
   kind: 'youtube#videoListResponse',

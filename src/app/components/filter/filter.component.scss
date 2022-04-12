@@ -2,6 +2,7 @@
 
 .filter {
   height: 50px;
+  font-size: 1.2rem;
 
   &-inner {
     @include wrapper-inner;
@@ -23,14 +24,10 @@
   }
 
   &__option {
-    cursor: pointer;
 
     &_underline {
       text-decoration: underline;
+      cursor: pointer;
     }
-
-    // &:hover {
-    //   opacity: .6;
-    // }
   }
 }

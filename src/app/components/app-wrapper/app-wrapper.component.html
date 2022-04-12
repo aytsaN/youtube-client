@@ -2,5 +2,5 @@
   (filterToggled)="toggleFilter()"
   (requestSubmitted)="showResults()"
 ></app-header>
-<app-filter [hidden]="!isFilterVisible"></app-filter>
+<app-filter [hidden]="!isFilterVisible" (filterApplied)="applyFilter($event)"></app-filter>
 <app-search #responseData></app-search>

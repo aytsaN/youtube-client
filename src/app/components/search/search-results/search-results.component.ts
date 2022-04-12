@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { ISearchItem } from '../models/search-item.model';
+import { IFilter } from 'src/app/models/filter.model';
+import { ISearchItem } from '../../../models/search-item.model';
 
 @Component({
   selector: 'app-search-results',
@@ -8,4 +9,6 @@ import { ISearchItem } from '../models/search-item.model';
 })
 export default class SearchResultsComponent {
   @Input() results: ISearchItem[] = [];
+
+  @Input() filterOptions!: IFilter;
 }

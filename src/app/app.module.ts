@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import AppRoutingModule from './app-routing.module';
@@ -9,6 +10,7 @@ import SearchResultsComponent from './components/search/search-results/search-re
 import SearchItemComponent from './components/search/search-item/search-item.component';
 import FilterComponent from './components/filter/filter.component';
 import AppWrapperComponent from './components/app-wrapper/app-wrapper.component';
+import FilterPipe from './pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -19,9 +21,11 @@ import AppWrapperComponent from './components/app-wrapper/app-wrapper.component'
     SearchItemComponent,
     FilterComponent,
     AppWrapperComponent,
+    FilterPipe,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
   ],
   providers: [],
